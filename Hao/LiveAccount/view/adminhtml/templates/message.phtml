@@ -1,0 +1,19 @@
+<?php
+    /** @var \Forix\LiveAccount\Helper\Data $helper */
+    $helper = $this->helper("Forix\LiveAccount\Helper\Data");
+?>
+<style>
+    marquee.message-account {
+        marquee-speed: fast;
+        color: #ff2f00;
+    }
+</style>
+<div class="notices-wrapper">
+    <div class="messages">
+        <div class="message" style="margin-top: 10px; font-size: 8.0rem">
+            <strong><?= __('YOU ARE WORKING ON LIVE SITE') ?></strong><br>
+            <marquee class="message-account"><?= $helper->getMessage() ?></marquee>
+        </div>
+    </div>
+</div>
+

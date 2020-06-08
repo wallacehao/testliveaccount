@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="page.wrapper">
+            <block ifconfig="forix_account_live/general/enabled" class="Magento\Framework\View\Element\Template" name="message_top" template="Forix_LiveAccount::message.phtml" before="-" />
+            <block ifconfig="forix_account_live/general/enabled" class="Magento\Framework\View\Element\Template" name="message_top_bottom" template="Forix_LiveAccount::message.phtml" after="page.content" />
+        </referenceContainer>
+    </body>
+</page>
